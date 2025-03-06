@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Управление пользователями"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Список пользователей -->
+    <ListView
+        android:id="@+id/users_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Поля для ввода данных пользователя -->
+    <EditText
+        android:id="@+id/user_email_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email пользователя"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"/>
+
+    <EditText
+        android:id="@+id/user_role_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Роль пользователя"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"/>
+
+    <!-- Кнопки для добавления, обновления и удаления пользователей -->
+    <Button
+        android:id="@+id/add_user_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить пользователя"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/update_user_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Обновить пользователя"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/delete_user_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Удалить пользователя"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Кнопка для перехода в менеджерский режим -->
+    <Button
+        android:id="@+id/go_to_manager_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Перейти к менеджеру"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
